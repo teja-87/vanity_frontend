@@ -1,0 +1,30 @@
+.navbar{
+    display: flex;
+
+}
+.navleft{
+ display: flex;
+ align-items: center;
+ margin-left: 10px;
+ justify-content: flex-start;
+ width: 50%;
+ font-family: sans-serif;
+}
+
+.navright{
+display: flex;
+align-items: center;
+justify-content: flex-end;
+width: 50%;
+}
+ .navbar button{
+
+    background-color: black;
+    opacity: 1;
+    color: white;
+   
+    margin-right: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+} 

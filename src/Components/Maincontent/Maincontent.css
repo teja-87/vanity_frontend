@@ -1,0 +1,39 @@
+.mainc{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: -100px;
+    height: 80%;
+}
+
+.whole{
+    height: 100%;
+}
+.inbut{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.inbut input{
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.inbut button{
+    border-radius: 5px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: rgb(22, 93, 155);
+    color:white
+}
+
+.inbut input,
+.inbut button {
+  box-sizing: border-box;
+
+}
