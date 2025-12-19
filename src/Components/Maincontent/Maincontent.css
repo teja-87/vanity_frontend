@@ -1,39 +1,185 @@
-.mainc{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    margin-top: -100px;
-    height: 80%;
+.whole {
+  height: 100vh;
+  width: 100vw;
+  background-size: 100% 100%; /* force it to fill full screen */
+  background-position: center bottom; /* keep pumpkins visible */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-.whole{
-    height: 100%;
-}
-.inbut{
-    display: flex;
-    justify-content: center;
-    width: 50%;
-}
-.inbut input{
-    width: 250px;
-    height: 40px;
-    border-radius: 5px;
-    font-size: 20px;
-}
-.inbut button{
-    border-radius: 5px;
-    height: 40px;
-    cursor: pointer;
-    font-size: 15px;
-    background-color: rgb(22, 93, 155);
-    color:white
+/* Ensures body doesn’t add unwanted scrollbars */
+body, html {
+  margin-top: 0px;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(35deg, #1861ff, #b34700);
+  
+  
 }
 
-.inbut input,
+.mainc {
+  width: 90%;
+  max-width: 900px;
+  margin-top: -200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+  
+  
+}
+
+
+
+.tex h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  /*background: linear-gradient(35deg, #1861ff, #b34700);*/
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  /* optional: works for modern browsers */
+  background-clip: text;
+  color: white;
+
+  text-shadow: 0 0 10px rgba(23, 23, 22, 0.6); /* subtle glow */
+  margin-bottom: 50px;
+}
+
+/* Input section */
+.allinputs {
+  display: flex;
+  padding-top: -200px;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+}
+
+.inbut {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: auto;
+}
+
+.inbut input {
+  width: 450px;
+  height: 50px;
+  border-radius: 15px;
+  font-size: 18px;
+  text-align: center;
+  border: 2px solid #5e3921;
+  /* background: rgba(156, 144, 144, 0.1); */
+  color: #0b0a0a;
+  outline: none;
+  transition: 0.3s ease;
+  font-size: x-large;
+  margin-bottom: 10px;
+  
+}
+
+.inn:focus {
+  outline: none; /* Removes default browser outline */
+  box-shadow: 0 0 8px white; /* Your desired box shadow */
+}
+
+.inbut input::placeholder {
+  color: rgba(41, 34, 34, 0.7);
+  font-family: Helvetica Neue;
+}
+
+.bs {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
 .inbut button {
-  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 10px 20px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 15px;
+  /* background: linear-gradient(135deg, #1861ff, #1c92cd); */
+  /* background:linear-gradient(130deg, #bcdada, #0e1112); */
+  background: black;
+  color:white;
+  border: none;
+  box-shadow: 0 4px 10px rgba(20, 13, 9, 0.3);
+  transition: all 0.3s ease;
+}
 
+.outbut{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  margin-top: 20px;
+  
+}
+.publickey{
+  width: 500px;
+  height:40px;
+  border-radius: 10px;
+  margin: 10px;
+  padding-top: 15px;
+  padding-left: 20px;
+    font-size: 20px;
+    font-family: Helvetica Neue;
+
+}
+.privatekey{
+  width: 500px;
+  height: 100px;
+  border-radius: 20px;
+  margin:10px;
+  padding: 15px;
+  
+}
+.inbut button:hover {
+  background: linear-gradient(135deg, #ff9b40, #d35400);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.8);
+}
+
+.outbut button{
+  border-radius: 10px;
+  padding: 10px 20px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 15px;
+  /* background: linear-gradient(135deg, #1861ff, #1c92cd); */
+  /* background:linear-gradient(130deg, #bcdada, #0e1112); */
+  background: black;
+  color:white;
+  border: none;
+  box-shadow: 0 4px 10px rgba(20, 13, 9, 0.3);
+  transition: all 0.3s ease;
+}
+
+.outbut button:hover {
+  background: linear-gradient(135deg, #ff9b40, #d35400);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+  .inbut input {
+    width: 85%;
+  }
+
+  .tex h1 {
+    font-size: 1.5rem;
+  }
 }

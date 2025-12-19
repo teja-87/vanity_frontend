@@ -9,11 +9,11 @@ const Navbar = () => {
     <div className='navbar'>
         <div className='navleft'>
             <img ></img>
-            <h1>VanityGen</h1>
+            <h1 className='heading'>VanityGen</h1>
         </div>
         <div className='navright'>
              
-            <WalletMultiButton>connect wallet</WalletMultiButton>
+            <WalletMultiButton></WalletMultiButton>
                     
         </div>
      

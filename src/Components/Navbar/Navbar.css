@@ -28,3 +28,19 @@ width: 50%;
     cursor: pointer;
     
 } 
+
+.navbar button:hover{
+  background: linear-gradient(135deg, white);
+  transform: translateY(-2px);
+  color: black;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.8);
+}
+
+
+.heading{
+    color: white;
+    /* background: linear-gradient(35deg, #1861ff, #b34700); */
+    background-clip: text;
+    font-size: 40px;
+   
+}
