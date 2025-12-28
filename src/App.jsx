@@ -1,12 +1,20 @@
-import React from 'react'
+import React from 'react';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
-import Landing from './pages/Landing/Landing'
+import Landing from './pages/Landing/Landing';
+import Launchpad from './pages/Launchpad/Launchpad';
 
 const App = () => {
   return (
-    <>
-    <Landing/>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={ <Landing/>}/>
+        <Route path='/launchpad' element={  <Launchpad/>}/>
+             
+            
+      </Routes>
+     
+    </BrowserRouter>
   )
 }
 
