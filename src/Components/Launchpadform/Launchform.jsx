@@ -1,5 +1,6 @@
 import React from "react";
 import "./Launchform.css";
+import Imagedrag from "../Imagedrag/Imagedrag";
 
 
 const Launchform=()=>{
@@ -9,7 +10,7 @@ const Launchform=()=>{
         <div>
             <div>
 
-                <label class="switch">
+                <label className="switch">
                         <input type="checkbox" role="switch" />
                         <span class="slider"></span>
                 </label>
@@ -30,10 +31,8 @@ const Launchform=()=>{
                 </label>         
            
             </div>
-
-            <div>
-                <input accept=".jpeg,.webp,.png,.img" type="file" />
-            </div>
+            <Imagedrag/>
+          
 
         </div>
         
