@@ -1,0 +1,26 @@
+.inputimage input{
+
+    width: 400px;
+    height:400px;
+    margin:100px;
+    
+
+}
+.inputimage{
+
+    width: 80%;
+    height:300px;
+    margin:50px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid green;
+
+}
+#pimg{      
+
+    margin: 50px;
+
+}

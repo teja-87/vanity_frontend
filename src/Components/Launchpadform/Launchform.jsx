@@ -7,31 +7,44 @@ const Launchform=()=>{
 
     return (
        
-        <div>
-            <div>
+        <div className="page">
+            <div className="launchform">
 
-                <label className="switch">
-                        <input type="checkbox" role="switch" />
-                        <span class="slider"></span>
-                </label>
+               <div className="formcon">
 
-                <label>Coin Name:
-                    <input placeholder="enter the coin name" />
-                </label>
+                <div className="nameandticker">
+                    <div className="coinname">
+                        <label for="name">Coin Name
+                        
+                        </label>
+                        <input id="name" placeholder="enter the coin name" />
+                    </div>
+                    <div className="tickername">
+                        <label for="ticker"> Ticker                 
+                        </label>
+                        <input placeholder="enter the ticker name" id="ticker" />
+                    </div>
 
-                <label> Ticker:
-                    <input placeholder="enter the ticker name" />
-                </label>
-                <label> Description:
+                   
+                    
+                    </div>
+                    <div className="textdiv">
+                            <label className="labeldesc" for="textarea"> Description </label>     
+                            <textarea id="textarea" placeholder="describe about your coin here"></textarea>   
 
-                    <textarea >
+                    </div>
+                   
 
-                    </textarea>
-
-                </label>         
+               </div>
+                
+                    
            
-            </div>
+
             <Imagedrag/>
+
+            
+            </div>
+           
           
 
         </div>
