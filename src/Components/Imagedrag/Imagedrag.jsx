@@ -33,7 +33,7 @@ const Imagedrag =()=>{
     
     return(
 
-
+        
         <div className="inputimage" 
         onClick={()=>inputRef.current.click()}
         onDragOver={(e)=>{
@@ -51,7 +51,7 @@ const Imagedrag =()=>{
             {preview? (<img src={preview} alt="preview" 
             style={{ width: "50%", height: "50%", objectFit: "contain" }} />):
         
-            <p id="pimg"> Click Here or Drag and Drop Image Here</p>}
+            <p id="pimg" style={{fontSize:"20px"}}> Click Here to upload a image or Drag and Drop Image Here</p>}
             <input ref={inputRef} accept=".jpeg,.webp,.png" type="file" hidden 
             onChange={(e)=>{handleFile(e.target.files[0]);
             

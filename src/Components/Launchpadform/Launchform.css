@@ -45,8 +45,8 @@
     height: 100px;
     resize:vertical;
     width: 100%;
-    
-    border-radius: 10px;
+     margin-top: 10px;
+    border-radius: 15px;
     
 
 }
@@ -59,8 +59,13 @@
 .coinname{
 
     display: flex;
-    flex-direction: column;   
+    flex-direction: column; 
+    
 
+}
+
+.nameandticker input{
+    margin-top: 10px;
 }
 
 .tickername{
@@ -76,3 +81,4 @@
      
 
 }
+

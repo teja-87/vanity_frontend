@@ -38,8 +38,10 @@ const Launchform=()=>{
                </div>
                 
                     
+           <div>
+             <label>Upload Image</label>
+           </div>
            
-
             <Imagedrag/>
 
             
