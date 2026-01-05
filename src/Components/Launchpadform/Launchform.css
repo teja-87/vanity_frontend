@@ -6,6 +6,7 @@
     align-items: flex-start;;
     background-color: beige;
     
+    
 }
 .launchform{
     width: 80%;
@@ -33,6 +34,7 @@
     height: 30px;
     width: 300px;
     border-radius: 10px;
+    font-size: 15px;
     
 
 }
@@ -46,7 +48,10 @@
     resize:vertical;
     width: 100%;
      margin-top: 10px;
-    border-radius: 15px;
+    border-radius: 12px;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-top: 10px;
     
 
 }
@@ -81,4 +86,5 @@
      
 
 }
+
 

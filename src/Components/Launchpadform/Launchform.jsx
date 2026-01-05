@@ -17,19 +17,19 @@ const Launchform=()=>{
                         <label for="name">Coin Name
                         
                         </label>
-                        <input id="name" placeholder="enter the coin name" />
+                        <input id="name" placeholder="enter your coin name" />
                     </div>
                     <div className="tickername">
                         <label for="ticker"> Ticker                 
                         </label>
-                        <input placeholder="enter the ticker name" id="ticker" />
+                        <input placeholder="enter your ticker name (eg:PEPE) " id="ticker" />
                     </div>
 
                    
                     
                     </div>
                     <div className="textdiv">
-                            <label className="labeldesc" for="textarea"> Description </label>     
+                            <label className="labeldesc" for="textarea"> Description (Optional) </label>     
                             <textarea id="textarea" placeholder="describe about your coin here"></textarea>   
 
                     </div>
@@ -44,7 +44,9 @@ const Launchform=()=>{
            
             <Imagedrag/>
 
-            
+            <div>
+                <button>Create coin</button>
+            </div>
             </div>
            
           
