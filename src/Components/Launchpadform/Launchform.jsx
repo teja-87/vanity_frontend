@@ -27,7 +27,7 @@ const Launchform=()=>{
 
                    
                     
-                    </div>
+                </div>
                     <div className="textdiv">
                             <label className="labeldesc" for="textarea"> Description (Optional) </label>     
                             <textarea id="textarea" placeholder="describe about your coin here"></textarea>   
@@ -44,7 +44,26 @@ const Launchform=()=>{
            
             <Imagedrag/>
 
-            <div>
+            <div className="socials">
+                              
+                <div className="webx">
+                    <div className="web">
+                        <label for="website">Add Website</label>
+                        <input id="website" placeholder="ADD URL"/>
+                    </div>
+                    <div className="x">
+                        <label for="ex">Add X</label>
+                        <input id="ex" placeholder="ADD URL"/>
+                    </div>
+                </div>
+                <div className="telegram">
+                    <label for='tele' >Add Telegram</label>
+                    <input id="tele"placeholder="ADD URL"/>
+                </div>
+                
+            </div>
+
+            <div className="butt">
                 <button>Create coin</button>
             </div>
             </div>
