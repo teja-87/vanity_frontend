@@ -1,14 +1,14 @@
 .whole {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
-  background-size: 100% 100%; /* force it to fill full screen */
-  background-position: center bottom; /* keep pumpkins visible */
+  
+  
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  
    
   
 }
@@ -17,9 +17,9 @@
 body, html {
   margin-top: 0px;
   padding: 0;
-
+background-color: #1d0b0b;
   
-  background: linear-gradient(35deg, #1861ff, #b34700);
+  /* background: linear-gradient(35deg, #1861ff, #b34700); */
   
   
 }
