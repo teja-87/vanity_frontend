@@ -4,12 +4,15 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    
+    background-color: #f8eded;
+   
     
     
 }
 .launchform{
+    
     width: 80%;
+    padding: 1rem;
     max-width: 800px;
    border-color: #f8eded;
    background-color: rgb(138, 129, 211);
