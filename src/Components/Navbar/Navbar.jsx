@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div className='navbar'>
         <div className='navleft'>
-            <img ></img>
+            
             <h1 className='heading'>VanityGen</h1>
         </div>
         <div className='navright'>

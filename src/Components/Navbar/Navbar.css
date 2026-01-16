@@ -5,7 +5,7 @@
 .navleft{
  display: flex;
  align-items: center;
- margin-left: 10px;
+ margin-left: 0.625rem;
  justify-content: flex-start;
  width: 50%;
  font-family: sans-serif;
@@ -13,9 +13,10 @@
 
 .navright{
 display: flex;
+
 align-items: center;
 justify-content: flex-end;
-width: 50%;
+width: 51%;
 }
  .navbar button{
 
@@ -23,7 +24,7 @@ width: 50%;
     opacity: 1;
     color: white;
    
-    margin-right: 10px;
+    margin-right: 0.625rem;
     border-radius: 10px;
     cursor: pointer;
     
@@ -43,4 +44,15 @@ width: 50%;
     background-clip: text;
     font-size: 40px;
    
+}
+
+@media(max-width:680px){
+
+.heading{
+   
+    font-size: 25px;
+   
+}
+
+
 }
